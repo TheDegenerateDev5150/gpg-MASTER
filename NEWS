@@ -1,3 +1,19 @@
+1.6.10 (stable)
+
+Require GSSDP >= 1.6.5
+
+- Context: Reuse allocated TCP socket from GSSDP Client
+  for web server
+- Context: Do not leak GError in ACL handler
+- Fix IPv6 host header validation
+
+Bugs fixed in this release:
+ - https://gitlab.gnome.org/GNOME/gupnp/issues/91
+
+All contributors to this release:
+ - Jens Georg <mail@jensge.org>
+ - Valeria <valeria.petrov@spinetix.com>
+
 1.6.9 (stable)
 
  - Linux-CM: Fix a potential memory leak
