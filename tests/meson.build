@@ -8,6 +8,7 @@ foreach program : ['context', 'bugs', 'service', 'acl', 'service-proxy', 'contex
             c_args : '-DDATA_PATH="@0@/data"'.format(meson.current_source_dir()),
             include_directories : config_h_inc,
         ),
+        timeout : 60,
         is_parallel : false
     )
 endforeach
